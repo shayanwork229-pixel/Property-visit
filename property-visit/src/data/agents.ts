@@ -1,0 +1,81 @@
+import type { Agent } from "./types";
+
+// Sample agents for the phase-1/2 catalogue. Phone numbers are placeholders.
+export const AGENTS: Agent[] = [
+  {
+    id: "ahmed-raza",
+    name: "Ahmed Raza",
+    agency: "Raza Estates",
+    citySlug: "lahore",
+    phone: "923001234501",
+    email: "ahmed@propertyvisit.pk",
+    rating: 4.9,
+    reviews: 128,
+    yearsExperience: 12,
+    specialties: ["DHA Lahore", "Luxury homes", "Commercial"],
+  },
+  {
+    id: "sana-malik",
+    name: "Sana Malik",
+    agency: "Clifton Realty",
+    citySlug: "karachi",
+    phone: "923001234502",
+    email: "sana@propertyvisit.pk",
+    rating: 4.8,
+    reviews: 96,
+    yearsExperience: 9,
+    specialties: ["Sea-view apartments", "Clifton", "Rentals"],
+  },
+  {
+    id: "bilal-khan",
+    name: "Bilal Khan",
+    agency: "Capital Homes",
+    citySlug: "islamabad",
+    phone: "923001234503",
+    email: "bilal@propertyvisit.pk",
+    rating: 4.9,
+    reviews: 141,
+    yearsExperience: 14,
+    specialties: ["DHA Islamabad", "Farmhouses", "Offices"],
+  },
+  {
+    id: "ayesha-siddiqui",
+    name: "Ayesha Siddiqui",
+    agency: "Bahria Property Hub",
+    citySlug: "karachi",
+    phone: "923001234504",
+    email: "ayesha@propertyvisit.pk",
+    rating: 4.7,
+    reviews: 73,
+    yearsExperience: 7,
+    specialties: ["Bahria Town", "Family homes", "Shops"],
+  },
+  {
+    id: "usman-tariq",
+    name: "Usman Tariq",
+    agency: "Tariq & Sons Real Estate",
+    citySlug: "rawalpindi",
+    phone: "923001234505",
+    email: "usman@propertyvisit.pk",
+    rating: 4.6,
+    reviews: 58,
+    yearsExperience: 10,
+    specialties: ["Plots", "Warehouses", "Investment"],
+  },
+  {
+    id: "hina-qureshi",
+    name: "Hina Qureshi",
+    agency: "Qureshi Associates",
+    citySlug: "multan",
+    phone: "923001234506",
+    email: "hina@propertyvisit.pk",
+    rating: 4.8,
+    reviews: 64,
+    yearsExperience: 8,
+    specialties: ["Multan", "Peshawar", "Residential"],
+  },
+];
+
+export function findAgent(id: string) {
+  return AGENTS.find((a) => a.id === id);
+}
